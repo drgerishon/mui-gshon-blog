@@ -1,8 +1,10 @@
 import { Grid, Typography, Divider} from '@mui/material'
 import Markdown from 'markdown-to-jsx'
 import { posts } from '../data/data'
-
-const MainPost = ({title}) => {
+interface Title {
+  title: string;
+}
+const MainPost = ({title}: Title) => {
   return (
     <Grid item xs={12} md={8}>
         <Typography variant='h5' gutterBottom>

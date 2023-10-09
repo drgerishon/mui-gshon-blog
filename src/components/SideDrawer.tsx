@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, Button, List, Divider, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Drawer, Button, List, Divider, ListItem, ListItemIcon, ListItemText, Box } from '@mui/material';
 import InboxIcon from "@mui/icons-material/Inbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { sections } from "../data/data";
@@ -23,7 +23,7 @@ const SideDrawer: React.FC<SideDrawerProps> = ({ children }) => {
   };
 
   const list = (anchor: string) => (
-    <div
+    <Box
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -43,7 +43,7 @@ const SideDrawer: React.FC<SideDrawerProps> = ({ children }) => {
           </ListItem>
         ))}
       </List>
-    </div>
+    </Box>
   );
 
   return (

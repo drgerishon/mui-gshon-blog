@@ -3,7 +3,7 @@ import Header from './components/Header';
 import { Grid } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import FeaturedPost from './components/FeaturedPost';
-import { featuredPosts, sidebar, mainFeaturedPost} from './data/data'
+import { featuredPosts, sidebar} from './data/data'
 import PostCards from './components/PostCards';
 import "./App.css"
 import MainPost from './components/MainPost';
